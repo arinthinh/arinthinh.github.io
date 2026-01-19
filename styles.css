@@ -631,8 +631,8 @@ section {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 3rem;
     margin-top: 3rem;
 }
 
@@ -651,7 +651,7 @@ section {
 
 .project-image {
     position: relative;
-    height: 250px;
+    height: 350px;
     overflow: hidden;
 }
 
@@ -703,34 +703,88 @@ section {
 }
 
 .project-content {
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 .project-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
     color: var(--text-color);
 }
 
 .project-content p {
     color: var(--text-light);
     margin-bottom: 1.5rem;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .tag {
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1.2rem;
     background: var(--bg-light);
     color: var(--primary-color);
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 500;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.store-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.store-btn.play-store {
+    background: #414141;
+    color: white;
+}
+
+.store-btn.play-store:hover {
+    background: #000;
+    transform: translateY(-2px);
+}
+
+.store-btn.app-store {
+    background: #0071e3;
+    color: white;
+}
+
+.store-btn.app-store:hover {
+    background: #0051ba;
+    transform: translateY(-2px);
+}
+
+.store-btn.itch-io {
+    background: #fa5c5c;
+    color: white;
+}
+
+.store-btn.itch-io:hover {
+    background: #d93030;
+    transform: translateY(-2px);
+}
+
+.store-btn i {
+    font-size: 1.2rem;
 }
 
 /* Contact Section */
