@@ -183,6 +183,13 @@ body {
     line-height: 1.8;
 }
 
+.hero-about {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
@@ -525,6 +532,22 @@ section {
     color: var(--text-light);
 }
 
+/* Experience and Education Section */
+.experience-education {
+    background: var(--bg-light);
+}
+
+.experience-education .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.experience-column,
+.education-column {
+    flex: 1;
+}
+
 /* Experience Section */
 .experience {
     background: var(--bg-light);
@@ -631,7 +654,7 @@ section {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     gap: 3rem;
     margin-top: 3rem;
 }
@@ -642,6 +665,21 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    position: relative;
+}
+
+.project-kind {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--gradient);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .project-card:hover {
@@ -733,6 +771,40 @@ section {
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+.project-details {
+    background: var(--bg-light);
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.project-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-details li {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.project-details li:last-child {
+    margin-bottom: 0;
+}
+
+.project-details li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .project-buttons {
