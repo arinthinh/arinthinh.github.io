@@ -3,399 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arin Dev</title>
+    <title>Thinh Pham Phuc (Arin) | Game Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="logo">
-            <a href="#home">ArinDev</a>
-        </div>
-        <ul class="nav-menu">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#experience-education" class="nav-link">Experience</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </div>
-</nav>
+<main class="page-shell">
+    <section class="hero-section" aria-labelledby="hero-name">
+        <h1 id="hero-name">Thinh Pham Phuc (Arin)</h1>
+        <p class="hero-role">Unity/Game Developer</p>
+        <p class="hero-tagline">
+            Game Developer specializing in systems and gameplay, with a strong focus on delivering engaging, intuitive, and memorable player experiences.
+        </p>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero-container">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Hi, I'm <br><span class="highlight">Phạm Phúc Thịnh</span></br>
-            </h1>
-            <h2 class="hero-subtitle">Game Developer | Unity Developer</h2>
-            <p class="hero-description">
-                Unity Developer with 4 years of hands-on experience designing, developing, and optimizing
-                mobile games using Unity and C#. Specializing in puzzle game development, creating engaging and
-                addictive experiences
-                for players across Android and iOS platforms.
+        <section class="projects-section" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <h2 id="projects-title">Works</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card"
+                         role="button"
+                         tabindex="0"
+                         data-title="Juicy Blast - 3D Match &amp; Music"
+                         data-image="images/juicyblast.png"
+                         data-description="A colorful match-3 adventure where players match juicy fruits, blend vibrant colors, and complete artworks with satisfying ASMR feedback."
+                         data-links='[{"label":"Google Play","href":"https://play.google.com/store/apps/details?id=com.ngd.juicyblast&hl=vi","icon":"fa-google-play"},{"label":"App Store","href":"https://apps.apple.com/vn/app/juicy-blast-3d-match-music/id6757842718?l=vi","icon":"fa-app-store-ios"}]'>
+                    <div class="project-image">
+                        <img src="images/juicyblast.png" alt="Juicy Blast - 3D Match &amp; Music">
+                    </div>
+                    <div class="project-content">
+                        <h3>Juicy Blast - 3D Match &amp; Music</h3>
+                    </div>
+                </article>
+
+                <article class="project-card"
+                         role="button"
+                         tabindex="0"
+                         data-title="Slime Hole Master"
+                         data-image="images/slime_hole_master.png"
+                         data-description="A casual puzzle game with smooth controls, colorful visuals, and compact challenge loops made for mobile players."
+                         data-links='[{"label":"Google Play","href":"https://play.google.com/store/apps/details?id=com.slime.hole.rescue&hl=en","icon":"fa-google-play"},{"label":"App Store","href":"https://apps.apple.com/be/app/slime-hole-master/id6747970688","icon":"fa-app-store-ios"}]'>
+                    <div class="project-image">
+                        <img src="images/slime_hole_master.png" alt="Slime Hole Master">
+                    </div>
+                    <div class="project-content">
+                        <h3>Slime Hole Master</h3>
+                    </div>
+                </article>
+
+                <article class="project-card"
+                         role="button"
+                         tabindex="0"
+                         data-title="Screw Shift Frenzy"
+                         data-image="images/screw_shift_frenzy.png"
+                         data-description="A hyper-casual puzzle game about unscrewing and rearranging parts through intuitive touch controls and satisfying feedback."
+                         data-links='[{"label":"Google Play","href":"https://play.google.com/store/apps/details?id=com.brain.screw.bar&pcampaignid=web_share","icon":"fa-google-play"}]'>
+                    <div class="project-image">
+                        <img src="images/screw_shift_frenzy.png" alt="Screw Shift Frenzy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Screw Shift Frenzy</h3>
+                    </div>
+                </article>
+
+                <article class="project-card"
+                         role="button"
+                         tabindex="0"
+                         data-title="Squid Color"
+                         data-image="images/squid_color.png"
+                         data-description="A creative color-matching puzzle with simple rules, evolving challenge, and vibrant visual feedback."
+                         data-links='[{"label":"Play on itch.io","href":"https://goldengarlicgames.itch.io/squid-color","icon":"fa-gamepad"}]'>
+                    <div class="project-image">
+                        <img src="images/squid_color.png" alt="Squid Color">
+                    </div>
+                    <div class="project-content">
+                        <h3>Squid Color</h3>
+                    </div>
+                </article>
+
+                <article class="project-card"
+                         role="button"
+                         tabindex="0"
+                         data-title="Decor Life: Dream Home Design"
+                         data-image="images/decor_life.png"
+                         data-description="A home-decoration game where players complete tasks, earn rewards, and build a personalized dream home."
+                         data-links='[{"label":"Google Play","href":"https://play.google.com/store/apps/details?id=com.home.design.decorlife","icon":"fa-google-play"}]'>
+                    <div class="project-image">
+                        <img src="images/decor_life.png" alt="Decor Life: Dream Home Design">
+                    </div>
+                    <div class="project-content">
+                        <h3>Decor Life: Dream Home Design</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="hero-bio">
+            <p>Hi, I'm Pham Phuc Thinh.</p>
+            <p>
+                I am a 25-year-old Unity Developer based in Ho Chi Minh City, Vietnam. Over the past 4 years, I have been working on mobile games, primarily focusing on gameplay development for puzzle and hyper-casual titles.
             </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/arinthinh" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/phuccthiinh/?skipRedirect=true" target="_blank"
-                   aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:phuccthiinh@gmail.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="tel:+84772459901" aria-label="Phone">
-                    <i class="fas fa-phone"></i>
-                </a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <div class="image-wrapper">
-                <div class="profile-img" style="background-image: url('images/self.jpg');"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience and Education Section -->
-<section id="experience-education" class="experience-education">
-    <div class="container">
-        <!-- Experience Section -->
-        <div class="experience-column">
-            <h2 class="section-title">Work Experience</h2>
-            <p class="section-subtitle">My professional journey</p>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2025 - Present</div>
-                        <h3>Unity Developer</h3>
-                        <h4>Amanotes</h4>
-                        <p>
-                            Developing engaging puzzle games that seamlessly integrate music to enhance player
-                            experience and engagement.
-                            Specializing in music-driven puzzle game mechanics that create immersive gameplay through
-                            rhythm and audio integration.
-                        </p>
-                        <ul class="timeline-list">
-                            <li>Designed and implemented music-integrated puzzle game mechanics</li>
-                            <li>Optimized performance for smooth music synchronization with gameplay</li>
-                            <li>Collaborated with audio team to create cohesive music-game experience</li>
-                            <li>Enhanced player engagement through innovative music-puzzle integration</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2023 - 2025</div>
-                        <h3>Unity Developer</h3>
-                        <h4>WEJOY Joint Stock Company</h4>
-                        <p>
-                            Developed Hyper-Casual and Puzzle games for mobile platforms.
-                            Mentored interns and contributed to in-house development tools.
-                        </p>
-                        <ul class="timeline-list">
-                            <li>Successfully published over 10 game titles on app stores</li>
-                            <li>Mentored interns by guiding them through coding standards and Unity workflows</li>
-                            <li>Created and maintained in-house development tools to improve team productivity</li>
-                            <li>Involved in entire product lifecycle from prototyping to store deployment</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2022 - 2023</div>
-                        <h3>Unity Developer</h3>
-                        <h4>GADGAME - International Video Marketing Co., Ltd.</h4>
-                        <p>
-                            Participated in development of small to mid-sized game projects across multiple genres
-                            including Infinite Runner, Rhythm, and Casual games.
-                        </p>
-                        <ul class="timeline-list">
-                            <li>Took ownership of core gameplay implementation and performance optimization</li>
-                            <li>Collaborated closely with design and production teams</li>
-                            <li>Successfully completed and published two game titles on app stores</li>
-                            <li>Ensured project timelines and quality standards were met</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <p>
+                I consider myself a gameplay-focused programmer who enjoys turning ideas into interactive and engaging experiences. I pay close attention to player experience and enjoy polishing small details that come together to create a satisfying game overall. For me, making games has always been more exciting than playing them.
+            </p>
+            <p>
+                I particularly enjoy solving gameplay challenges and designing logic systems that make mechanics feel intuitive and rewarding. Whenever I encounter a difficult problem, I prefer digging into it myself and exploring different solutions until I find the one that feels right. The process of building, iterating, and refining gameplay is what keeps me motivated and constantly learning.
+            </p>
         </div>
 
-        <!-- Education Section -->
-        <div class="education-column">
-            <h2 class="section-title">Education</h2>
-            <p class="section-subtitle">Academic background and certifications</p>
+        <div class="hero-links" aria-label="Social and download links">
+            <a class="hero-link" href="#">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+            <a class="hero-link" href="#">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+            </a>
+            <a class="hero-link" href="#">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+            <a class="hero-link hero-link-download" id="download-cv" href="cv.pdf" download>
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Download CV
+            </a>
+        </div>
+    </section>
+</main>
 
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2020 - 2024</div>
-                        <h3>Bachelor of Computer Science</h3>
-                        <h4>Ho Chi Minh City University of Education</h4>
-                        <p>Bachelor program focused on software development and game programming.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2025</div>
-                        <h3>Google Project Management Certification</h3>
-                        <h4>Google / Coursera</h4>
-                        <p>Professional certification in project management methodologies and best practices.</p>
-                    </div>
-                </div>
+<div class="project-modal" aria-hidden="true">
+    <div class="project-modal-backdrop" data-modal-close></div>
+    <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+        <button class="project-modal-close" type="button" aria-label="Close project details" data-modal-close>
+            <i class="fas fa-xmark"></i>
+        </button>
+        <div class="project-modal-body">
+            <div class="project-modal-image">
+                <img src="" alt="" id="project-modal-image">
+            </div>
+            <div class="project-modal-content">
+                <h3 id="project-modal-title"></h3>
+                <p id="project-modal-description"></p>
+                <div class="project-modal-links" id="project-modal-links"></div>
             </div>
         </div>
     </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="projects">
-    <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Some of my recent work</p>
-
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-kind">Company Project</div>
-                <div class="project-image">
-                    <img src="images/juicyblast.png" alt="Juicy Blast - 3D Match &amp; Music">
-                    <div class="project-overlay">
-                        <a href="https://play.google.com/store/apps/details?id=com.ngd.juicyblast&hl=vi" target="_blank"
-                           class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://apps.apple.com/vn/app/juicy-blast-3d-match-music/id6757842718?l=vi"
-                           target="_blank" class="project-link"><i class="fab fa-app-store"></i></a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Juicy Blast - 3D Match &amp; Music</h3>
-                    <div class="project-tags">
-                        <span class="tag">Match-3</span>
-                        <span class="tag">Puzzle</span>
-                        <span class="tag">Music</span>
-                    </div>
-                    <p>Juicy Blast is a colorful match-3 puzzle adventure where players match juicy fruits, blend them
-                        into vibrant colors, and complete beautiful artworks. Featuring satisfying ASMR sound effects,
-                        catchy music, relaxing visuals, and collectible themed albums, the game delivers a fun and
-                        immersive experience with easy-to-learn yet increasingly challenging gameplay.</p>
-                    <div class="project-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.ngd.juicyblast&hl=vi" target="_blank"
-                           class="store-btn play-store">
-                            <i class="fab fa-google-play"></i>
-                            Google Play
-                        </a>
-                        <a href="https://apps.apple.com/vn/app/juicy-blast-3d-match-music/id6757842718?l=vi"
-                           target="_blank" class="store-btn app-store">
-                            <i class="fab fa-app-store-ios"></i>
-                            App Store
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-kind">Company Project</div>
-                <div class="project-image">
-                    <img src="images/slime_hole_master.png" alt="Slime Hole Master">
-                    <div class="project-overlay">
-                        <a href="https://play.google.com/store/apps/details?id=com.slime.hole.rescue&hl=en"
-                           target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://apps.apple.com/be/app/slime-hole-master/id6747970688" target="_blank"
-                           class="project-link"><i class="fab fa-app-store"></i></a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Slime Hole Master</h3>
-                    <div class="project-tags">
-                        <span class="tag">Casual</span>
-                        <span class="tag">Puzzle</span>
-                        <span class="tag">Mobile</span>
-                    </div>
-                    <p>Fun and addictive casual game where players control a slime character navigating through various
-                        obstacles. Features colorful graphics and smooth gameplay mechanics designed for Android and iOS
-                        platforms.</p>
-                    <div class="project-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.slime.hole.rescue&hl=en"
-                           target="_blank" class="store-btn play-store">
-                            <i class="fab fa-google-play"></i>
-                            Google Play
-                        </a>
-                        <a href="https://apps.apple.com/be/app/slime-hole-master/id6747970688" target="_blank"
-                           class="store-btn app-store">
-                            <i class="fab fa-app-store-ios"></i>
-                            App Store
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-kind">Company Project</div>
-                <div class="project-image">
-                    <img src="images/screw_shift_frenzy.png" alt="Screw Shift Frenzy">
-                    <div class="project-overlay">
-                        <a href="https://play.google.com/store/apps/details?id=com.brain.screw.bar&pcampaignid=web_share"
-                           target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Screw Shift Frenzy</h3>
-                    <div class="project-tags">
-                        <span class="tag">Puzzle</span>
-                        <span class="tag">Hyper-casual</span>
-                        <span class="tag">Mechanics</span>
-                    </div>
-                    <p>Engaging hyper-casual puzzle game where players unscrew and rearrange mechanical parts to solve
-                        increasingly challenging puzzles. Features intuitive touch controls and satisfying visual
-                        feedback.</p>
-                    <div class="project-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.brain.screw.bar&pcampaignid=web_share"
-                           target="_blank" class="store-btn play-store">
-                            <i class="fab fa-google-play"></i>
-                            Google Play
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-kind">Personal Project</div>
-                <div class="project-image">
-                    <img src="images/squid_color.png" alt="Squid Color">
-                    <div class="project-overlay">
-                        <a href="https://goldengarlicgames.itch.io/squid-color" target="_blank" class="project-link"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Squid Color</h3>
-                    <div class="project-tags">
-                        <span class="tag">Puzzle</span>
-                        <span class="tag">Color Matching</span>
-                        <span class="tag">Indie</span>
-                    </div>
-                    <p>Creative puzzle game where players match colors and solve increasingly complex challenges.
-                        Features engaging gameplay mechanics, vibrant visuals, and satisfying progression.</p>
-                    <div class="project-buttons">
-                        <a href="https://goldengarlicgames.itch.io/squid-color" target="_blank"
-                           class="store-btn itch-io">
-                            <i class="fas fa-gamepad"></i>
-                            Play on itch.io
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-kind">Company Project</div>
-                <div class="project-image">
-                    <img src="images/decor_life.png" alt="Decor Life: Dream Home Design">
-                    <div class="project-overlay">
-                        <a href="https://play.google.com/store/apps/details?id=com.home.design.decorlife"
-                           target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Decor Life: Dream Home Design</h3>
-                    <div class="project-tags">
-                        <span class="tag">Simulation</span>
-                        <span class="tag">Home Decoration</span>
-                        <span class="tag">Casual</span>
-                    </div>
-                    <p>Engaging home decoration and room customization game where players complete chores and tasks to
-                        earn money for purchasing furniture and decor items. Build and personalize your dream home
-                        through gameplay progression and strategic decoration.</p>
-                    <div class="project-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.home.design.decorlife"
-                           target="_blank" class="store-btn play-store">
-                            <i class="fab fa-google-play"></i>
-                            Google Play
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello</p>
-
-        <div class="contact-content-centered">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div>
-                        <h3>Location</h3>
-                        <p>Ho Chi Minh City, Vietnam</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div>
-                        <h3>Email</h3>
-                        <p>phuccthiinh@gmail.com</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>0772459901</p>
-                    </div>
-                </div>
-                <div class="contact-social">
-                    <h3>Follow Me</h3>
-                    <div class="social-icons">
-                        <a href="https://github.com/arinthinh" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/phuccthiinh/?skipRedirect=true" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="mailto:phuccthiinh@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <a href="tel:+84772459901"><i class="fas fa-phone"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <p>&copy; 2026 Phạm Phúc Thịnh - Game Developer. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+</div>
 
 <script src="script.js"></script>
 </body>
