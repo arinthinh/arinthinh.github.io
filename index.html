@@ -7,17 +7,28 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <main class="page-shell">
     <section class="hero-section" aria-labelledby="hero-name">
-        <h1 id="hero-name">Thinh Pham Phuc (Arin)</h1>
+        <div class="bio-intro">
+            <img src="images/avatar.jpeg" alt="Arin portrait">
+        </div>
         <p class="hero-role">Unity/Game Developer</p>
-        <p class="hero-tagline">
-            Game Developer specializing in systems and gameplay, with a strong focus on delivering engaging, intuitive, and memorable player experiences.
-        </p>
+        <h1 id="hero-name">Thinh Pham Phuc (Arin)</h1>
+        <div class="hero-tagline">
+            <p>
+                I am a 25-year-old Unity Developer based in Ho Chi Minh City, Vietnam. Over the past 4 years, I have been working on mobile games, primarily focusing on gameplay development for puzzle and hyper-casual titles.
+            </p>
+            <p>
+                I consider myself a gameplay-focused programmer who enjoys turning ideas into interactive and engaging experiences. I pay close attention to player experience and enjoy polishing small details that come together to create a satisfying game overall. For me, making games has always been more exciting than playing them.
+            </p>
+            <p>
+                I particularly enjoy solving gameplay challenges and designing logic systems that make mechanics feel intuitive and rewarding. Whenever I encounter a difficult problem, I prefer digging into it myself and exploring different solutions until I find the one that feels right. The process of building, iterating, and refining gameplay is what keeps me motivated and constantly learning.
+            </p>
+        </div>
 
         <section class="projects-section" aria-labelledby="projects-title">
             <div class="section-heading">
@@ -26,10 +37,10 @@
 
             <div class="projects-list">
                 <article class="project-card">
-                    <div class="project-image">
+                    <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Juicy Blast - 3D Match &amp; Music">
                         <img src="images/juicyblast.png" alt="Juicy Blast - 3D Match &amp; Music">
-                    </div>
-                    <div class="project-content">
+                    </button>
+                    <template class="project-data">
                         <h3>Juicy Blast - 3D Match &amp; Music</h3>
                         <p>A colorful match-3 adventure where players match juicy fruits, blend vibrant colors, and complete artworks with satisfying ASMR feedback.</p>
                         <div class="project-links" aria-label="Juicy Blast store links">
@@ -42,14 +53,14 @@
                                 App Store
                             </a>
                         </div>
-                    </div>
+                    </template>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-image">
+                    <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Slime Hole Master">
                         <img src="images/slime_hole_master.png" alt="Slime Hole Master">
-                    </div>
-                    <div class="project-content">
+                    </button>
+                    <template class="project-data">
                         <h3>Slime Hole Master</h3>
                         <p>A casual puzzle game with smooth controls, colorful visuals, and compact challenge loops made for mobile players.</p>
                         <div class="project-links" aria-label="Slime Hole Master store links">
@@ -62,14 +73,14 @@
                                 App Store
                             </a>
                         </div>
-                    </div>
+                    </template>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-image">
+                    <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Screw Shift Frenzy">
                         <img src="images/screw_shift_frenzy.png" alt="Screw Shift Frenzy">
-                    </div>
-                    <div class="project-content">
+                    </button>
+                    <template class="project-data">
                         <h3>Screw Shift Frenzy</h3>
                         <p>A hyper-casual puzzle game about unscrewing and rearranging parts through intuitive touch controls and satisfying feedback.</p>
                         <div class="project-links" aria-label="Screw Shift Frenzy store links">
@@ -78,14 +89,14 @@
                                 Google Play
                             </a>
                         </div>
-                    </div>
+                    </template>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-image">
+                    <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Squid Color">
                         <img src="images/squid_color.png" alt="Squid Color">
-                    </div>
-                    <div class="project-content">
+                    </button>
+                    <template class="project-data">
                         <h3>Squid Color</h3>
                         <p>A creative color-matching puzzle with simple rules, evolving challenge, and vibrant visual feedback.</p>
                         <div class="project-links" aria-label="Squid Color store links">
@@ -94,14 +105,14 @@
                                 itch.io
                             </a>
                         </div>
-                    </div>
+                    </template>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-image">
+                    <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Decor Life: Dream Home Design">
                         <img src="images/decor_life.png" alt="Decor Life: Dream Home Design">
-                    </div>
-                    <div class="project-content">
+                    </button>
+                    <template class="project-data">
                         <h3>Decor Life: Dream Home Design</h3>
                         <p>A home-decoration game where players complete tasks, earn rewards, and build a personalized dream home.</p>
                         <div class="project-links" aria-label="Decor Life store links">
@@ -110,25 +121,19 @@
                                 Google Play
                             </a>
                         </div>
-                    </div>
+                    </template>
                 </article>
             </div>
         </section>
 
+        <dialog class="project-modal" id="project-modal">
+            <button class="project-modal-close" type="button" aria-label="Đóng">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="project-modal-body"></div>
+        </dialog>
+
         <div class="hero-bio">
-            <div class="bio-intro">
-                <img src="images/avatar.jpeg" alt="Arin portrait">
-                <p>Hi, I'm Arin.</p>
-            </div>
-            <p>
-                I am a 25-year-old Unity Developer based in Ho Chi Minh City, Vietnam. Over the past 4 years, I have been working on mobile games, primarily focusing on gameplay development for puzzle and hyper-casual titles.
-            </p>
-            <p>
-                I consider myself a gameplay-focused programmer who enjoys turning ideas into interactive and engaging experiences. I pay close attention to player experience and enjoy polishing small details that come together to create a satisfying game overall. For me, making games has always been more exciting than playing them.
-            </p>
-            <p>
-                I particularly enjoy solving gameplay challenges and designing logic systems that make mechanics feel intuitive and rewarding. Whenever I encounter a difficult problem, I prefer digging into it myself and exploring different solutions until I find the one that feels right. The process of building, iterating, and refining gameplay is what keeps me motivated and constantly learning.
-            </p>
             <p class="contact-heading">GET IN TOUCH</p>
 
             <div class="hero-links" aria-label="Social and download links">
