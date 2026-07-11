@@ -181,7 +181,25 @@ a {
 }
 
 .contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 28px;
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
     user-select: all;
+}
+
+.contact-email i {
+    font-size: 0.85em;
+    color: var(--accent);
+}
+
+.contact-email:hover {
+    color: var(--accent);
 }
 
 .contact-email::selection {
@@ -190,43 +208,64 @@ a {
 }
 
 .hero-links {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
     width: 100%;
-    margin-top: 14px;
+    margin-top: 22px;
 }
 
 .hero-link {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    min-height: 50px;
-    padding: 12px 14px;
-    border: 1px solid var(--line);
-    border-radius: var(--radius-md);
+    gap: 9px;
+    padding: 13px 20px;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
     background: var(--card);
     font-size: 0.92rem;
-    color: var(--muted);
+    color: var(--text);
     text-decoration: none;
-    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+    transition: transform var(--transition), border-color var(--transition), background-color var(--transition), color var(--transition);
 }
 
 .hero-link i {
     font-size: 1rem;
-    color: var(--text);
+    color: var(--muted);
+    transition: color var(--transition);
 }
 
 .hero-link:hover {
-    transform: translateY(-3px);
-    border-color: var(--line-strong);
-    box-shadow: var(--shadow-soft);
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent);
+}
+
+.hero-link:hover i {
+    color: var(--accent);
 }
 
 .hero-link-download {
     color: var(--bg);
-    background: var(--text);
-    border-color: var(--text);
+    background: var(--accent);
+    border-color: var(--accent);
+    font-weight: 600;
+}
+
+.hero-link-download i {
+    color: var(--bg);
+}
+
+.hero-link-download:hover {
+    background: var(--accent);
+    color: var(--bg);
+    box-shadow: var(--shadow-soft);
+}
+
+.hero-link-download:hover i {
+    color: var(--bg);
 }
 
 .section-heading {
@@ -412,12 +451,6 @@ a {
     }
 }
 
-@media (max-width: 1024px) {
-    .hero-links {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
 @media (max-width: 720px) {
     .page-shell {
         width: min(100% - 20px, 1180px);
@@ -439,7 +472,12 @@ a {
     }
 
     .hero-links {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-link {
+        justify-content: center;
     }
 
     .projects-list {
