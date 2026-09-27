@@ -35,3 +35,23 @@ projectModalClose?.addEventListener('click', () => projectModal.close());
 projectModal?.addEventListener('click', (event) => {
     if (event.target === projectModal) projectModal.close();
 });
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = lightbox?.querySelector('.lightbox-image');
+const lightboxClose = lightbox?.querySelector('.lightbox-close');
+
+projectModalBody?.addEventListener('click', (event) => {
+    const btn = event.target.closest('.project-screenshot');
+    if (!btn || !lightbox || !lightboxImage) return;
+    const img = btn.querySelector('img');
+    if (!img) return;
+    lightboxImage.src = img.currentSrc || img.src;
+    lightboxImage.alt = img.alt || '';
+    if (typeof lightbox.showModal === 'function') lightbox.showModal();
+});
+
+lightboxClose?.addEventListener('click', () => lightbox.close());
+
+lightbox?.addEventListener('click', (event) => {
+    if (event.target === lightbox) lightbox.close();
+});
