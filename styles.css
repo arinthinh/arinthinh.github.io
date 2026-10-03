@@ -271,7 +271,9 @@ a {
 }
 
 .featured-screenshots .project-screenshot {
+    flex: 0 0 auto;
     width: min(180px, 40vw);
+    scroll-snap-align: start;
 }
 
 .contact-section {
@@ -541,30 +543,13 @@ a {
 }
 
 .project-screenshots-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
     margin-top: 12px;
-    padding-bottom: 8px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: var(--line-strong) transparent;
-}
-
-.project-screenshots-grid::-webkit-scrollbar {
-    height: 6px;
-}
-
-.project-screenshots-grid::-webkit-scrollbar-thumb {
-    background: var(--line-strong);
-    border-radius: 999px;
 }
 
 .project-screenshot {
-    flex: 0 0 auto;
-    width: min(148px, 38vw);
     aspect-ratio: 9 / 16;
     padding: 0;
     border: 1px solid var(--line);
@@ -572,7 +557,6 @@ a {
     overflow: hidden;
     background: var(--bg-soft);
     cursor: zoom-in;
-    scroll-snap-align: start;
     transition: border-color var(--transition), transform var(--transition);
 }
 
