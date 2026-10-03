@@ -394,6 +394,13 @@ a {
     overflow: hidden;
 }
 
+.project-author {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.75rem;
+    color: var(--soft);
+}
+
 .project-trigger {
     display: block;
     width: 100%;
