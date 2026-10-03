@@ -11,22 +11,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+<header class="profile-banner">
+    <img src="images/banner.png" alt="Arin banner">
+</header>
+
 <main class="page-shell">
     <section class="hero-section" aria-labelledby="hero-name">
-        <div class="bio-intro">
-            <img src="images/avatar.jpeg" alt="Arin portrait">
-        </div>
-        <p class="hero-role">Unity/Game Developer</p>
-        <h1 id="hero-name">Thinh Pham Phuc (Arin)</h1>
-        <div class="hero-tagline">
-            <p>
-                I am a 25-year-old Unity Developer based in Ho Chi Minh City, Vietnam. Over the past 4 years, I have been working on mobile games, primarily focusing on gameplay development for puzzle and hyper-casual titles.
+        <div class="profile-header">
+            <div class="profile-identity">
+                <img src="images/avatar.jpeg" alt="Arin portrait">
+                <div>
+                    <h1 id="hero-name">
+                        Thinh Pham Phuc
+                        <span class="hero-nickname">Arin</span>
+                    </h1>
+                    <div class="hero-roles">
+                        <p class="hero-role">
+                            <i class="fa-brands fa-unity"></i>
+                            Unity Developer
+                        </p>
+                        <p class="hero-role">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                            Game Designer
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="hero-tagline">
+                I am a Game Developer based in Ho Chi Minh City, Vietnam, working on mobile games with a focus on gameplay development for puzzle and hyper-casual titles.
             </p>
         </div>
 
+        <section class="featured-section" aria-labelledby="featured-title">
+            <div class="featured-info">
+                <h2 id="featured-title">Slime Hole Master</h2>
+                <p class="featured-meta">Gameplay Developer · Unity · Casual Puzzle</p>
+                <p class="featured-desc">Collect slimes from multiple holes, optimize every move under capacity limits, and clear objectives before the timer runs out.</p>
+                <div class="featured-stats">
+                    <img src="images/SlimeHoleMaster/icon.png" alt="Slime Hole Master icon">
+                    <div class="featured-stat">
+                        <strong>3.9 <i class="fa-solid fa-star"></i></strong>
+                        <span>1.17K reviews</span>
+                    </div>
+                    <div class="featured-stat">
+                        <strong>50K+</strong>
+                        <span>Downloads</span>
+                    </div>
+                </div>
+                <div class="featured-links">
+                    <a class="featured-button" href="https://play.google.com/store/apps/details?id=com.slime.hole.rescue&amp;hl=en" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-google-play"></i>
+                        Google Play
+                    </a>
+                    <a class="featured-button" href="https://apps.apple.com/be/app/slime-hole-master/id6747970688" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        App Store
+                    </a>
+                </div>
+            </div>
+            <div class="featured-screenshots" aria-label="Slime Hole Master screenshots">
+                <button class="project-screenshot" type="button" aria-label="Xem screenshot 1">
+                    <img src="images/SlimeHoleMaster/hole1.webp" alt="Slime Hole Master screenshot 1">
+                </button>
+                <button class="project-screenshot" type="button" aria-label="Xem screenshot 2">
+                    <img src="images/SlimeHoleMaster/hole2.webp" alt="Slime Hole Master screenshot 2">
+                </button>
+                <button class="project-screenshot" type="button" aria-label="Xem screenshot 3">
+                    <img src="images/SlimeHoleMaster/hole3.webp" alt="Slime Hole Master screenshot 3">
+                </button>
+            </div>
+        </section>
+
         <section class="projects-section" aria-labelledby="projects-title">
             <div class="section-heading">
-                <h2 id="projects-title">FEATURED WORK</h2>
+                <h2 id="projects-title">More by Arin</h2>
             </div>
 
             <div class="projects-list">
@@ -34,6 +92,7 @@
                     <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Mewzik Game">
                         <img src="images/MewzikGame/icon.png" alt="Mewzik Game">
                     </button>
+                    <span class="project-name">Mewzik Game</span>
                     <template class="project-data">
                         <h3>Mewzik Game</h3>
                         <p>Mewzik is a pet-themed rhythm game where adorable cats and other furry friends bounce, dance, and sing along to every beat. Packed with cute, funny visuals and pleasant, cheerful music, each song turns into a lighthearted challenge of timing taps to the rhythm, delivering a highly entertaining and feel-good rhythm game experience.</p>
@@ -50,6 +109,7 @@
                     <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Melody Match">
                         <img src="images/MelodyMatch/icon.webp" alt="Melody Match">
                     </button>
+                    <span class="project-name">Melody Match</span>
                     <template class="project-data">
                         <h3>Melody Match</h3>
                         <p>Melody Match is a casual match-3 puzzle game where players sort and clear goods to complete each level. What sets it apart is its music layer: every level is built around a song, and matching special instrument items builds up the track's energy, turning each clear into a satisfying music experience.</p>
@@ -66,6 +126,7 @@
                     <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Juicy Blast - 3D Match &amp; Music">
                         <img src="images/JuicyBlast/icon.png" alt="Juicy Blast - 3D Match &amp; Music">
                     </button>
+                    <span class="project-name">Juicy Blast - 3D Match &amp; Music</span>
                     <template class="project-data">
                         <h3>Juicy Blast - 3D Match &amp; Music</h3>
                         <p>Juicy Blast is a casual triple-match puzzle game where players match fruits to complete objectives and blend them into vibrant colors that gradually fill beautiful artwork. The gameplay combines relaxing match mechanics, satisfying visual and audio feedback, and a rewarding collection system featuring themed artwork albums and progressively challenging levels.</p>
@@ -86,6 +147,7 @@
                     <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Slime Hole Master">
                         <img src="images/SlimeHoleMaster/icon.png" alt="Slime Hole Master">
                     </button>
+                    <span class="project-name">Slime Hole Master</span>
                     <template class="project-data">
                         <h3>Slime Hole Master</h3>
                         <p>Hole Slime Master is a mobile casual puzzle game built around tap-based interactions and strategic resource management. Players collect slimes from multiple holes, optimize their moves under capacity limitations, and complete objectives before the timer expires. The game includes multiple levels, boosters, and a smooth mobile-friendly user experience.</p>
@@ -106,6 +168,7 @@
                     <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Screw Shift Frenzy">
                         <img src="images/ScrewShiftFrenzy/icon.png" alt="Screw Shift Frenzy">
                     </button>
+                    <span class="project-name">Screw Shift Frenzy</span>
                     <template class="project-data">
                         <h3>Screw Shift Frenzy</h3>
                         <p>Screw Shift Frenzy is a mobile puzzle game where players strategically move layered blocks to align screw holes and complete each level. As puzzles become more complex, players must carefully plan their moves and solve increasingly challenging layouts using intuitive touch controls.</p>
@@ -122,6 +185,7 @@
                     <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Squid Color">
                         <img src="images/SquidColor/icon.png" alt="Squid Color">
                     </button>
+                    <span class="project-name">Squid Color</span>
                     <template class="project-data">
                         <h3>Squid Color</h3>
                         <p>A creative color-matching puzzle with simple rules, evolving challenge, and vibrant visual feedback.</p>
@@ -138,6 +202,7 @@
                     <button class="project-trigger" type="button" aria-haspopup="dialog" aria-label="Xem chi tiết Decor Life: Dream Home Design">
                         <img src="images/DecorRoom/icon.png" alt="Decor Life: Dream Home Design">
                     </button>
+                    <span class="project-name">Decor Life: Dream Home Design</span>
                     <template class="project-data">
                         <h3>Decor Life: Dream Home Design</h3>
                         <p>A home-decoration game where players complete tasks, earn rewards, and build a personalized dream home.</p>
@@ -186,33 +251,56 @@
             <img class="lightbox-image" alt="">
         </dialog>
 
-        <div class="hero-bio">
-            <p class="contact-heading">GET IN TOUCH</p>
+        <section class="contact-section" aria-labelledby="contact-title">
+            <div class="section-heading">
+                <h2 id="contact-title">Get in touch</h2>
+            </div>
 
-            <div class="hero-links" aria-label="Social and download links">
-                <a class="hero-link" href="https://github.com/arinthinh" target="_blank" rel="noopener">
+            <div class="contact-list">
+                <a class="contact-item" href="mailto:phuccthiinh@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <strong>Email</strong>
+                        phuccthiinh@gmail.com
+                    </span>
+                </a>
+                <a class="contact-item" href="https://github.com/arinthinh" target="_blank" rel="noopener">
                     <i class="fa-brands fa-github"></i>
-                    GitHub
+                    <span>
+                        <strong>GitHub</strong>
+                        github.com/arinthinh
+                    </span>
                 </a>
-                <a class="hero-link" href="https://www.linkedin.com/in/phuccthiinh/" target="_blank" rel="noopener">
+                <a class="contact-item" href="https://www.linkedin.com/in/phuccthiinh/" target="_blank" rel="noopener">
                     <i class="fa-brands fa-linkedin"></i>
-                    LinkedIn
+                    <span>
+                        <strong>LinkedIn</strong>
+                        in/phuccthiinh
+                    </span>
                 </a>
-                <a class="hero-link" href="https://www.instagram.com/arin.thinh/" target="_blank" rel="noopener">
+                <a class="contact-item" href="https://www.instagram.com/arin.thinh/" target="_blank" rel="noopener">
                     <i class="fa-brands fa-instagram"></i>
-                    Instagram
+                    <span>
+                        <strong>Instagram</strong>
+                        @arin.thinh
+                    </span>
                 </a>
-                <a class="hero-link hero-link-download" id="download-cv" href="cv.pdf" download>
+                <a class="contact-item" href="https://phuccthiinh.itch.io/" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-itch-io"></i>
+                    <span>
+                        <strong>itch.io</strong>
+                        phuccthiinh.itch.io
+                    </span>
+                </a>
+                <a class="contact-item" id="download-cv" href="cv.pdf" download>
                     <i class="fa-solid fa-file-arrow-down"></i>
-                    Download CV
+                    <span>
+                        <strong>Resume</strong>
+                        Download CV
+                    </span>
                 </a>
             </div>
-            <span class="contact-email">
-                <i class="fa-solid fa-envelope"></i>
-                phuccthiinh@gmail.com
-            </span>
-
-        </div>
+        </section>
     </section>
 </main>
 

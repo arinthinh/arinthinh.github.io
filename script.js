@@ -18,7 +18,7 @@ const projectModalClose = projectModal?.querySelector('.project-modal-close');
 
 document.querySelectorAll('.project-trigger').forEach((trigger) => {
     trigger.addEventListener('click', () => {
-        const template = trigger.nextElementSibling;
+        const template = trigger.parentElement.querySelector('.project-data');
         const icon = trigger.querySelector('img');
         if (!projectModal || !projectModalBody || !(template instanceof HTMLTemplateElement)) return;
 
@@ -40,7 +40,7 @@ const lightbox = document.getElementById('lightbox');
 const lightboxImage = lightbox?.querySelector('.lightbox-image');
 const lightboxClose = lightbox?.querySelector('.lightbox-close');
 
-projectModalBody?.addEventListener('click', (event) => {
+document.addEventListener('click', (event) => {
     const btn = event.target.closest('.project-screenshot');
     if (!btn || !lightbox || !lightboxImage) return;
     const img = btn.querySelector('img');
